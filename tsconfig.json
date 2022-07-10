@@ -14,7 +14,11 @@
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "types": [
-      "@intlify/vite-plugin-vue-i18n/client"
+      "@intlify/vite-plugin-vue-i18n/client",
+      "vite/client",
+      "vue/ref-macros",
+      "vite-plugin-pages/client",
+      "vite-plugin-vue-layouts/client"
     ],
     "paths": {
       "@/*": ["src/*"]
