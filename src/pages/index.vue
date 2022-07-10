@@ -1,5 +1,7 @@
 <script setup lang="ts">
 
+const { t } = useI18n()
+
 const pageTitle = ref("Home page")
 
 useHead({
@@ -14,8 +16,12 @@ useHead({
 </script>
 
 <template>
-    <div class="home">
-        <h1>this is the home page</h1>
-        <RouterLink to="/user">user page</RouterLink>
+    <div class="home mt-20">
+        <h2 class="text-3xl">
+            {{ t("HomePage.title") }}
+        </h2>
+        <RouterLink to="/user" class="underline text-blue-500">
+            {{ t("header.links.user-link") }}
+        </RouterLink>
     </div>
 </template>

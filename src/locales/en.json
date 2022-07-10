@@ -5,10 +5,14 @@
     "header" : {
         "logo" : "App logo",
         "links" : {
-            "link1" : "first link",
+            "user-link" : "user page",
             "link2" : "second link",
             "link3" : "third link",
             "link4" : "forth link"
         }
-    }
+    },
+    "HomePage" : {
+        "title" : "this is Home page"
+    },
+    "defaultLayout" : "Here is the default layout"
 }

@@ -15,9 +15,9 @@ const { t } = useI18n()
                     </h1>
                     <ul class="hidden pt-2 font-medium md:(flex gap-6 items-center)">
                         <li>
-                            <a class="header-link" title="first link">
-                                {{ t("header.links.link1") }}
-                            </a>
+                            <router-link to="/user" class="header-link" title="first link">
+                                {{ t("header.links.user-link") }}
+                            </router-link>
                         </li>
                         <li>
                             <a class="header-link" title="second link">
@@ -78,7 +78,7 @@ const { t } = useI18n()
             >
                 <ul class="divide-y-1 divide-gray-300 dark:divide-gray-700">
                     <li class="resposive-menu-item">
-                        <a  title="first link">{{ t("header.links.link1") }}</a>
+                        <router-link to="/user"  title="first link">{{ t("header.links.user-link") }}</router-link>
                     </li>
                     <li class="resposive-menu-item">
                         <a  title="second link">{{ t("header.links.link2") }}</a>

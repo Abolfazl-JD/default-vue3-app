@@ -5,8 +5,11 @@ const pageDirection = computed<"ltr" | "rtl">(() => locale.value === "en" ? "ltr
 </script>
 
 <template>
-  <div class="app-container" :dir="pageDirection">
+  <div class="app-container w-full text-center" :dir="pageDirection">
     <HeaderNav />
     <RouterView />
+    <p class="text-red-500 mt-10">
+      {{ $t("defaultLayout") }}
+    </p>
   </div>
 </template>
