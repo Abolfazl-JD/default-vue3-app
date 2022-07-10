@@ -25,5 +25,9 @@
     "pageUsers" : {
         "title" : "User page",
         "desc" : "the description about users page"
+    },
+    "404page" : {
+        "title" : "page not found",
+        "desc" : "404 page"
     }
 }

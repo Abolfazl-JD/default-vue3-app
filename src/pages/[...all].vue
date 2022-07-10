@@ -1,11 +1,13 @@
 <script setup lang="ts">
 
+const { t } = useI18n()
+
 const head = reactive({
-    title: "page not found",
+    title: computed(() => t("404page.title")),
     meta: [
         {
             name: "description",
-            content : "404 page"
+            content : computed(() => t("404page.desc"))
         }
     ]
 })
@@ -16,7 +18,7 @@ useHead(head)
 <template>
     <div>
         <h1 class="text-2xl dark:text-gray-200">
-            {{ $t("notFound") }}
+            {{ t("notFound") }}
         </h1>
     </div>
 </template>
