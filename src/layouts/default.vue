@@ -1,15 +1,14 @@
 <script setup lang="ts">
 
-const { locale } = useI18n()
-const pageDirection = computed<"ltr" | "rtl">(() => locale.value === "en" ? "ltr" : "rtl")
+const { t } = useI18n()
 </script>
 
 <template>
-  <div class="app-container w-full text-center" :dir="pageDirection">
+  <div class="app-container w-full text-center">
     <HeaderNav />
     <RouterView />
     <p class="text-red-500 mt-10">
-      {{ $t("defaultLayout") }}
+      {{ t("defaultLayout") }}
     </p>
   </div>
 </template>

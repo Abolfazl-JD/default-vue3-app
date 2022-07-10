@@ -1,5 +1,13 @@
+<script setup lang="ts">
+
+const { locale } = useI18n()
+const pageDirection = computed<"ltr" | "rtl">(() => locale.value === "en" ? "ltr" : "rtl")
+</script>
+
 <template>
-  <RouterView />
+  <div :dir="pageDirection">
+    <RouterView />
+  </div>
 </template>
 
 <style>

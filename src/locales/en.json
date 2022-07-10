@@ -14,5 +14,8 @@
     "HomePage" : {
         "title" : "this is Home page"
     },
-    "defaultLayout" : "Here is the default layout"
+    "defaultLayout" : "Here is the default layout",
+    "usersLayout" : "Users layout is here",
+    "userPage" : "this is the user page",
+    "homeLink" : "back to home page"
 }
