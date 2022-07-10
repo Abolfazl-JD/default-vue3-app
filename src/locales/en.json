@@ -17,5 +17,7 @@
     "defaultLayout" : "Here is the default layout",
     "usersLayout" : "Users layout is here",
     "userPage" : "this is the user page",
-    "homeLink" : "back to home page"
+    "homeLink" : "back to home page",
+    "tryAnother" : "try another page",
+    "errorLayout" : "this is the 404 layout"
 }
