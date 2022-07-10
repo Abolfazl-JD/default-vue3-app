@@ -6,6 +6,8 @@ import WindiCSS from 'vite-plugin-windicss'
 import vueI18n from '@intlify/vite-plugin-vue-i18n'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import Pages from 'vite-plugin-pages'
+import Layouts from 'vite-plugin-vue-layouts'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -37,7 +39,11 @@ export default defineConfig({
       directoryAsNamespace: true,
       include: [/\.vue$/, /\.vue\?vue/],
       dts: 'src/components.d.ts'
-    })
+    }),
+    Pages({
+      extensions: ['vue'],
+    }),
+    Layouts()
   ],
   resolve: {
     alias: {

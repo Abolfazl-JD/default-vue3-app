@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^8.9.1",
+    "@vueuse/head": "^0.7.6",
     "pinia": "^2.0.14",
     "vue": "^3.2.37",
     "vue-i18n": "^9.2.0-beta.36",
