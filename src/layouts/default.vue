@@ -1,6 +1,5 @@
 <template>
-  <div class="app-container w-full text-center">
-    <HeaderNav />
+  <div class="w-full text-center">
     <RouterView />
     <p class="text-red-500 mt-10">
       {{ $t("defaultLayout") }}
