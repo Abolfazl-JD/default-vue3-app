@@ -17,7 +17,7 @@ useHead({
 
 <template>
     <div class="home mt-20">
-        <h2 class="text-3xl">
+        <h2 class="text-3xl dark:text-white">
             {{ t("HomePage.title") }}
         </h2>
         <RouterLink to="/user" class="underline text-blue-500">
