@@ -12,7 +12,13 @@ useHead({
         <h1 class="dark:text-white text-2xl">
             {{ t("userPage") }}
         </h1>
-        <router-link to="/" class="underline text-blue-500" title="'homepage'">{{ t("homeLink") }}</router-link>
+        <router-link 
+            to="/" 
+            class="underline text-blue-500" 
+            title="'homepage'"
+        >
+                {{ t("homeLink") }}
+            </router-link>
     </div>
 </template>
 
