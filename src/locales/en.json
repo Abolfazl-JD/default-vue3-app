@@ -21,5 +21,9 @@
     "homePage" : {
         "title" : "Home page",
         "desc" : "here is the discription"
+    },
+    "pageUsers" : {
+        "title" : "User page",
+        "desc" : "the description about users page"
     }
 }

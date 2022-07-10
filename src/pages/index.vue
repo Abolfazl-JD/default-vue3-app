@@ -15,10 +15,10 @@ useHead({
 <template>
     <div class="home mt-20">
         <h2 class="text-3xl dark:text-white">
-            {{ $t("homePage.title") }}
+            {{ t("homePage.title") }}
         </h2>
         <RouterLink to="/user" class="underline text-blue-500">
-            {{ $t("header.links.user-link") }}
+            {{ t("header.links.user-link") }}
         </RouterLink>
     </div>
 </template>
