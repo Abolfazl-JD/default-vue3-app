@@ -15,8 +15,9 @@ useHead(head)
 
 <template>
     <div>
-        <h1>The page you are looking for has not found</h1>
-        <router-link to="/">Back to homepage</router-link>
+        <h1 class="text-2xl dark:text-gray-200">
+            {{ $t("notFound") }}
+        </h1>
     </div>
 </template>
 

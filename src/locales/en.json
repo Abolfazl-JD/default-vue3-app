@@ -19,5 +19,6 @@
     "userPage" : "this is the user page",
     "homeLink" : "back to home page",
     "tryAnother" : "try another page",
-    "errorLayout" : "this is the 404 layout"
+    "errorLayout" : "this is the 404 layout",
+    "notFound" : "The page you are looking for has not found"
 }
