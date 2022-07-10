@@ -1,12 +1,12 @@
 <script setup lang="ts">
-const pageTitle = ref("Home page")
+const { t } = useI18n()
 
 useHead({
-    title: computed(() => pageTitle.value),
+    title: computed(() => t("homePage.title")),
     meta: [
         {
             name: "description",
-            content : "here is the discription"
+            content : computed(() => t('homePage.desc'))
         }
     ]
 })
@@ -15,7 +15,7 @@ useHead({
 <template>
     <div class="home mt-20">
         <h2 class="text-3xl dark:text-white">
-            {{ $t("HomePage.title") }}
+            {{ $t("homePage.title") }}
         </h2>
         <RouterLink to="/user" class="underline text-blue-500">
             {{ $t("header.links.user-link") }}
