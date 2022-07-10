@@ -1,8 +1,6 @@
 <script setup lang="ts">
 
 const showResponsiveMenu = ref(false)
-
-const { t } = useI18n()
 </script>
 
 <template>
@@ -11,27 +9,27 @@ const { t } = useI18n()
             <div class="w-full pb-2 flex justify-between items-center">
                 <div class="flex gap-16">
                     <h1 class="text-2xl sm:text-4xl font-semibold dark:text-light-300">
-                        {{ t("header.logo") }}
+                        {{ $t("header.logo") }}
                     </h1>
                     <ul class="hidden pt-2 font-medium md:(flex gap-6 items-center)">
                         <li>
                             <router-link to="/user" class="header-link" title="first link">
-                                {{ t("header.links.user-link") }}
+                                {{ $t("header.links.user-link") }}
                             </router-link>
                         </li>
                         <li>
-                            <a class="header-link" title="second link">
-                                {{ t("header.links.link2") }}
-                            </a>
+                            <router-link to="/" class="header-link" title="second link">
+                                {{ $t("header.links.home-page") }}
+                            </router-link>
                         </li>
                         <li>
                             <a class="header-link"  title="third link">
-                                {{ t("header.links.link3") }}
+                                {{ $t("header.links.link3") }}
                             </a>
                         </li>
                         <li>
                             <a class="header-link"  title="forth link">
-                                {{ t("header.links.link4") }}
+                                {{ $t("header.links.link4") }}
                             </a>
                         </li>
                     </ul>
@@ -78,16 +76,16 @@ const { t } = useI18n()
             >
                 <ul class="divide-y-1 divide-gray-300 dark:divide-gray-700">
                     <li class="resposive-menu-item">
-                        <router-link to="/user"  title="first link">{{ t("header.links.user-link") }}</router-link>
+                        <router-link to="/user"  title="first link">{{ $t("header.links.user-link") }}</router-link>
                     </li>
                     <li class="resposive-menu-item">
-                        <a  title="second link">{{ t("header.links.link2") }}</a>
+                        <router-link to="/"  title="second link">{{ $t("header.links.home-page") }}</router-link>
                     </li>
                     <li class="resposive-menu-item">
-                        <a  title="third link">{{ t("header.links.link3") }}</a>
+                        <a  title="third link">{{ $t("header.links.link3") }}</a>
                     </li>
                     <li class="resposive-menu-item">
-                        <a  title="forth link">{{ t("header.links.link4") }}</a>
+                        <a  title="forth link">{{ $t("header.links.link4") }}</a>
                     </li>
                 </ul>
             </div>

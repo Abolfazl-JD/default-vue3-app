@@ -6,7 +6,7 @@
         "logo" : "App logo",
         "links" : {
             "user-link" : "user page",
-            "link2" : "second link",
+            "home-page" : "home page",
             "link3" : "third link",
             "link4" : "forth link"
         }
