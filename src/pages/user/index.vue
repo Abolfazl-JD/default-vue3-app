@@ -10,7 +10,6 @@ useHead({
             this is the user page
         </h1>
         <router-link to="/" :title="'homepage'">back to home page</router-link>
-        <UserHello />
     </div>
 </template>
 
