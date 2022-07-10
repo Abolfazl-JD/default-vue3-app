@@ -1,0 +1,14 @@
+{   
+    "message" : "hello world",
+    "en" : "EN",
+    "fa" : "FA",
+    "header" : {
+        "logo" : "App logo",
+        "links" : {
+            "link1" : "first link",
+            "link2" : "second link",
+            "link3" : "third link",
+            "link4" : "forth link"
+        }
+    }
+}
