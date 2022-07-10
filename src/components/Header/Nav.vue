@@ -15,22 +15,22 @@ const { t } = useI18n()
                     </h1>
                     <ul class="hidden pt-2 font-medium md:(flex gap-6 items-center)">
                         <li>
-                            <a class="header-link">
+                            <a class="header-link" title="first link">
                                 {{ t("header.links.link1") }}
                             </a>
                         </li>
                         <li>
-                            <a class="header-link">
+                            <a class="header-link" title="second link">
                                 {{ t("header.links.link2") }}
                             </a>
                         </li>
                         <li>
-                            <a class="header-link">
+                            <a class="header-link"  title="third link">
                                 {{ t("header.links.link3") }}
                             </a>
                         </li>
                         <li>
-                            <a class="header-link">
+                            <a class="header-link"  title="forth link">
                                 {{ t("header.links.link4") }}
                             </a>
                         </li>
@@ -78,16 +78,16 @@ const { t } = useI18n()
             >
                 <ul class="divide-y-1 divide-gray-300 dark:divide-gray-700">
                     <li class="resposive-menu-item">
-                        <a>{{ t("header.links.link1") }}</a>
+                        <a  title="first link">{{ t("header.links.link1") }}</a>
                     </li>
                     <li class="resposive-menu-item">
-                        <a>{{ t("header.links.link2") }}</a>
+                        <a  title="second link">{{ t("header.links.link2") }}</a>
                     </li>
                     <li class="resposive-menu-item">
-                        <a>{{ t("header.links.link3") }}</a>
+                        <a  title="third link">{{ t("header.links.link3") }}</a>
                     </li>
                     <li class="resposive-menu-item">
-                        <a>{{ t("header.links.link4") }}</a>
+                        <a  title="forth link">{{ t("header.links.link4") }}</a>
                     </li>
                 </ul>
             </div>

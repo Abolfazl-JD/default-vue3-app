@@ -9,6 +9,7 @@ const { toggleDark, isDark } = useDarkMode()
         @click="toggleDark()"
         mode="out-in" 
         name="theme-switch"
+        title="toggle theme"
     >
         <svg
             v-if="!isDark"

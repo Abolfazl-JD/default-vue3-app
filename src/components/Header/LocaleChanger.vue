@@ -13,7 +13,8 @@ const toggleLocaleLang = (lang : 'en' | 'fa') => {
 
 <template>
     <div class="relative">
-        <button 
+        <button
+            title="change title" 
             @click="showLanguageSwitcher = !showLanguageSwitcher" 
             class="w-14 px-1 sm:(w-18 px-2) py-1 rounded-b-sm rounded-t flex items-center justify-between bg-transparent border-2 border-solid border-gray-700 hover:bg-gray-300 transition ease duration-300 dark:(border-light-300 hover:bg-dark-200)"
         >
