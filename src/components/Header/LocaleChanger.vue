@@ -70,7 +70,7 @@ const toggleLocaleLang = (lang : 'en' | 'fa') => {
             :class="showLanguageSwitcher ? 'h-65px' : 'h-0 border-none'"
         >
             <li 
-                class="locale-list-item hover:bg-gray-200 py-2" 
+                class="locale-list-item hover:bg-gray-200 dark:hover:bg-gray-800 py-2" 
                 @click="toggleLocaleLang('en')"
             >
                 <span class="text-xs font-bold sm:(font-medium text-size-15px)">
@@ -91,7 +91,7 @@ const toggleLocaleLang = (lang : 'en' | 'fa') => {
                 </svg>
             </li>
             <li 
-                class="locale-list-item py-1 hover:bg-gray-200 py-2"  
+                class="locale-list-item py-1 hover:bg-gray-200 dark:hover:bg-gray-800 py-2"  
                 @click="toggleLocaleLang('fa')"
             >
                 <span class="text-xs font-bold sm:(font-medium text-size-15px)">
